@@ -1,0 +1,299 @@
+# 0.upto(25) {|n|
+# [n, Math.sqrt(n)]
+# if n.odd?
+#   p n, Math.sqrt(n)
+# end
+# }
+
+#i = 0 start i at 0
+# puts "#{i = i +1}" until i == 10
+
+# i = 0
+# while i <= 25
+#   i = i + 1
+#   if i.odd?
+#   p "Odd has a square root which is #{Math.sqrt(i)}"
+#   end
+# end
+
+# def find_the_needle(needle, haystack)
+#   haystack.each do |item|
+#     if item == needle
+#       #stop
+#       return item #explicit return
+#     end
+#   end
+# end
+
+# def element_index(element, my_array)
+#   i = 0
+#   while i < my_array.length
+#
+#     if element == my_array[i]
+#       return i
+#     end
+#   i = i + 1
+# end
+# return -1
+# end
+#
+# puts element_index("b", ["a", "b", "c"])
+# puts element_index("hello", ["a", "b", "c"])
+
+
+# CHEETAH_GIRLS = [
+#   "Raven-Symone",
+#   "Adrienne Bailon",
+#   "Sabrina Bryan",
+#   "Kiely Williams"
+# ]
+#
+# auditions = [
+#   "Usher",
+#   "Wiz Khalifa",
+#   "Adrienne Bailon",
+#   "Hulk Hogan",
+#   "Sabrina Bryan",
+#   "Diego Lugo",
+#   "Kiely Williams",
+#   "Justin Timberlake"
+# ]
+#
+# panel = CHEETAH_GIRLS
+#
+# puts panel
+
+# beatles = [
+#   {
+#     name: nil, #John
+#     nickname: "The Smart One"
+#   },
+#   {
+#     name: nil, #Ringo
+#     nickname: "The Funny One"
+#   },
+#   {
+#     name: nil, #Paul
+#     nickname: "The Cute One"
+#     },
+#   {
+#     name: nil, #George
+#     nickname: "The Quiet One"
+#   }
+# ]
+
+# pets = ["Scooby", "Soco", "Summer", "Pixie", "Wilson", "Mason","Baron", "Brinkley", "Bella"]
+#
+# def specialpets(array)
+#   array.each do |name|
+#     if name.include? "S"
+#       puts "My name starts with an S for super!"
+#     else
+#     puts "I'm still pretty special too!"
+#   end
+#   end
+# end
+
+# def max(small_number,large_number)
+#   print large_number
+# end
+#
+# p max(1, 3).nil?
+
+# p (1..100).to_a
+# i = 1..100
+# if i == % 5
+#   then 'fizz'
+# end
+
+# def max(number1,number2, number3)
+#   if number1 > number2
+#     return number1
+#   elsif
+#     number2 > number1
+#     return number2
+#   end
+# end
+
+# p max(3, 1, 0)
+# p max(1, 3)
+# p max(0, 0)
+
+# def max(number1, number2, number3)
+#  max.each do |number|
+#    if number >
+#   end
+# end
+# def max(*args)
+#  args.max
+# end
+#
+# p max(2,6,6,7,8,89,9)
+
+# (1..100).each do |i|
+#   if i % 5 == 0 and i % 3 == 0
+#     puts "FizzBuzz"
+#   elsif i % 3 == 0
+#     puts "Fizz"
+#   elsif i % 5 == 0
+#     puts "Buzz"
+#   else
+#     puts i
+#   end
+# # end
+# names = ['romeo', 'oedipus', 'hansel', 'gretel']
+# names = capitalize_each(names)
+# p names
+# => ['Romeo', 'Oedipus', 'Hansel', 'Gretel']
+
+
+# beatles = [
+#   {
+#     name: nil,
+#     nickname: "The Smart One"
+#   },
+#   {
+#     name: nil,
+#     nickname: "The Funny One"
+#   },
+#   {
+#     name: nil,
+#     nickname: "The Cute One"
+#     },
+#   {
+#     name: nil,
+#     nickname: "The Quiet One"
+#   }
+# ]
+#
+# i = 0
+# while i < beatles.length
+# case beatles[i][:nickname]
+# when "The Smart One"
+#   beatles[i][:nickname] = "John"
+# when "The Funny One"
+#   beatles[i][:nickname] = "Ringo"
+# when "The Cute One"
+#   beatles[i][:nickname] = "Paul"
+# when "The Quiet One"
+#   beatles[i][:nickname] = "George"
+#   i += 1
+#   end
+# end
+#
+# i = 0
+# while i < beatles.length
+#   puts "Hi, I'm #{beatles[i][:name]}.  I'm #{beatles[i][:nickname]}!"
+#   i += 1
+# end
+
+
+class Table #<- like the factory that creates it
+  attr_writer :num_legs
+  attr_reader :num_legs
+# OR USE THIS attr_accessor :num_legs
+
+  def initialize(my_num_legs) #<-allows you to customize the table
+    @tabletop = []
+    @num_legs = my_num_legs
+  end
+end
+
+  def put_on(something)
+   # @ =allows me to use in another method
+    @tabletop << something
+end
+
+def look_at
+  @tabletop
+end
+
+
+def change_num_legs(new_num_legs)
+  @num_legs = new_num_legs
+end
+
+
+#getter gets information from initialize
+# def tell_num_legs
+#   @num_legs
+#   end
+# end
+#
+# p Table.methods
+# a_table = Table.new(4) #<- like the actual object
+# p a_table
+# p a_table.class
+# p a_table.methods
+# p a_table.hash, a_table.to_s
+# p a_table.look_at
+# p a_table.put_on("apple")
+# p a_table.put_on("pear")
+# p a_table.tell_num_legs #<-from tell_num_legs which is from initialize
+
+class Vehicle
+  attr_reader :engine #<- being inserted with < Vehicle
+end
+
+class Car < Vehicle #<- code is being inherited from the class at the top
+  # attr_reader :engine
+end
+
+class Motorcycle < Vehicle
+  # attr_reader :engine
+end
+
+# a_car = Car.new
+# another_car = Car.new
+# p a_car, another_car
+#
+# a_motorcycle = Motorcycle.new
+# p a_motorcycle.engine
+#
+# class Table # <- This is an Object
+# end
+#
+# p Table.ancestors
+# p Table.methods
+# Table.new
+
+# module Talkative #<-represents the ability to talk
+  def speak
+    puts "Hello"
+  end
+
+#
+p speak
+# class Car
+# end
+#
+# class Kitt < Car
+#   include Talkative
+#   # def speak
+#   #   puts "Hello"
+#   # end
+# end
+#
+# class Person
+#   include Talkative
+#   # def speak
+#   #   puts "Hello"
+#   # end
+# end
+#
+# p Person.ancestors, Kitt.ancestors
+# Person.new.speak
+
+# bill = gets.chomp
+# puts "What is the total?"
+# tip = gets.chomp
+# puts "How much would you like to pay in tip (in %)?"
+# amount_of_people = gets.chomp
+# puts "How many people are paying?"
+# total_bill = (bill + tip)
+# my_share = (bill + tip) / amount_of_people
+#
+# puts "Your tip amount is equal to #{tip}"
+# puts "Your total and the tip is equal to #{total_bill}"
+# puts "Your share of the total is equal to #{my_share}"
+#puts "This is your share of the bill:\t $#{my_share}"

@@ -1,0 +1,110 @@
+# class Table
+#   attr_accessor :num_legs
+#   def initialize(num_legs) #<- argument
+    #<- ^^ allows you to customize it
+    # if num_legs.nil?
+    #   puts "seriously?!" # MISSING SOMETHING HERE
+    # end
+    # if num_legs > 0
+    # @num_legs = num_legs #<- changes it from nil to 4
+    # else
+    # @num_legs = 4
+    # return Exception.new
+#     raise ArgumentError "Invalid type of argument" #<- stops the rest of the code
+#     end
+#   end
+# end
+
+
+
+# t = Table.new(4) #<- argument
+# p t.num_legs
+# t.num_legs = 4
+# p t.num_legs
+
+# t = Table.new(nil) #<-stupid or eveil
+# p t.num_legs
+
+# begin
+# t = Table.new(-1)
+  # Table.new(nil)
+# t = Table.new(4)
+# p t.num_legs
+# rescue ArgumentError #<- rescue block
+#   puts "Sorry!"
+# rescue RuntimeError
+#   puts "What?!"
+# end
+
+# puts "The world goes on..."
+
+
+# def a
+#   b
+# end
+#
+# def b
+#   c
+# end
+#
+# def c
+#   d
+# end
+#
+# def d
+#   raise "Kaboom!"
+# # rescue
+# #   puts "That was a close one!"
+# end
+#
+# begin
+#   a
+# puts d
+# rescue => e
+#   puts "Save the world!"
+#   p e.message, e.class
+#   puts e.backtrace
+# end
+
+# begin
+#   1/0 #<-error
+# rescue => e
+#   p(e)
+# end
+
+
+# begin
+# raise I0Eroor, "broken pipe" #<- let this error happen
+# get("http://wyncode.co") #<- helps get the source of the problem
+# # rescue => e
+# #   p e
+# end
+
+# begin
+#   exit #<- breaks code
+# puts "Hello"
+# rescue SystemExit #if you don't write SystemExit, it will
+#   #consider it a StandardError and do nothing
+#   puts "Not so fast!" #<- usually not appropriate to rescue it
+# end
+
+
+# catch :ball do
+#   #
+#     #
+#       #
+#       throw :ball  #instead of break(has to be written over&over)
+#       #
+#     #
+#   #
+# end
+
+
+def add_two(number)
+  if not number.nil?
+    number + 2
+  end
+end
+
+add_two(nil)
+#GOTO: 1

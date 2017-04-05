@@ -1,0 +1,153 @@
+# dead_people = ["Ether", "Mortimer", "Buford"]
+# # #kelley = "Kelly"
+# alive_people = ["kelley", "Joe", "Megan"]
+# sick_people = ["kelley", "Joe"]
+# # sick_people = alive_people.slice(0,2) #(first item, amount of items I want to get)
+# #
+# name = "kelley"
+# # #name = "Joe"
+# # #yes_or_no = dead_people.include?(name)
+# # #p yes_or_no
+# #
+# # # if dead_people.include?(name) #then (option)
+# # #   puts "Don't send questionnaire #{name}"
+# # # end
+# # #
+# # # if alive_people.include?(name)
+# # #   puts "Send questionnaire #{name}"
+# # # end
+# #
+# if dead_people.include?(name)
+#   puts "Don't send questionnaire to #{name}"
+# elsif sick_people.include?(name)
+#   puts "Send a questionnaire to #{name} later"
+# else
+#   puts "Send a questionnaire to #{name}"
+# end
+
+# country = "fr"
+# if country == "us"
+#   puts "Hello"
+# elsif country == "es"
+#   puts "Hola"
+# elsif country == "fr"
+#   puts "Bonjour"
+# else
+#   puts "Alo"
+# end
+
+# case country = "us"
+# when "us"
+#   puts "Hello"
+# when "es"
+#   puts "Hola"
+# when "fr"
+#   puts "Bonjour"
+# else
+#   puts "Alo"
+# end
+
+
+# dead_people = ["Mortimer", "Buford"]
+# name = "Joe"
+# # if not dead_people.include?(name)
+# #   puts "Send a questionnaire to #{name}"
+# # end
+# unless dead_people.include?(name)
+#   puts "Send a questionnaire to #{name}"
+# end #unless and elsif don't go together!
+
+# if true
+#   puts "Hello"
+# else
+#   puts "Goodbye"
+# end
+
+# if true
+#   puts "Hello"
+# end
+
+#OPTIONAL
+# puts "Hello" if true
+# puts "questionnaire" if alive_people.include?(name)
+# puts "questionnaire" unless alive_people.include?(name)
+
+# message = "true"
+# if true
+#   message = "true"
+# else
+#   message = "false"
+# end
+# puts message
+
+# message = if false
+#   "true"
+# else
+#   "false"
+# end
+# puts message
+
+
+# message = is_alive ? "true" : "false"
+# puts message
+
+# loop do
+#   puts "Hello world"
+# end
+
+# i = 0
+# while i < 11 # MAKE SURE THIS IS CORRECT
+#   puts i
+#   i = i + 1 # THIS TOO OR IT WILL BE INFINITELY LOOPING
+# end
+
+# i = 0
+# until i >= 11 # UNTIL READS BETTER
+#   puts i
+#   i = i + 1
+# end
+
+# i = 0
+# puts "#{i = i +1}" while i < 10
+
+# i = 0 start i at 0
+# puts "#{i = i +1}" until i == 10 THIS IS EASIEST FOR MEEEEE!
+
+#THIS IS THE SAFEST OF ALL THE LOOPS
+# alive_people = ["Jo", "Juha", "Auston"]
+# for name in alive_people
+#   puts name
+# end
+#
+#THIS IS ALSO SAFE
+#  alive_people.each do |name|
+#    puts name
+#  end
+
+# i = 0
+# loop do
+#   puts "Danger Zone!"
+#   i = i + 1
+#   if i > 100
+#     break #THIS STOPS THE LOOP
+#   end
+# end
+#
+# i = 0
+# loop do
+#   puts "Danger Zone!"
+#   i = i + 1
+#   if i.odd?
+#     next #THIS SKIPS A LINE
+#   end
+#   puts i
+#   if i > 100
+#     break #THIS STOPS THE LOOP
+#   end
+# end
+
+
+do_homework = 1
+make_bed = 2
+take_out_trash = 3
+[do_homework, make_bed, take_out_trash]
